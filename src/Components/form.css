@@ -1,0 +1,108 @@
+.container {
+    padding: 15px;
+    background-color: beige;
+}
+.input,
+input {
+    outline: none;
+    border: none;
+    background: var(white) solid;
+    color: var(black);
+    height: 40px;
+    /* border: 1px solid rgba(#707070, 0.4);*/
+    box-shadow: 0 2px 8px rgba(12, 12, 13, 0.1);
+    border-radius: 20px;
+    margin: 12px 0;
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input::placeholder{
+    font-family: Roboto;
+}
+
+textarea::placeholder{
+    font-family: Roboto;
+}
+textarea{
+    padding :10px 20px;
+}
+
+
+
+.in{
+    width:90%;
+    border-radius:0.5rem;
+}
+
+
+.card{
+    box-shadow: 0 2px 8px rgba(12, 12, 13, 0.1);
+    width: 800px;
+}
+
+
+label{
+    font-family:Josefin Sans;
+}
+
+
+.loader {
+    border: 4px solid black;
+    color: white;
+    border-radius: 50%;
+    border-top: 4px solid var(--secondary-accent);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    background: var(--primary-accent);
+    font-family: Josefin Sans;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rmod{
+    display:flex;
+    justify-content:center;
+    height: 900px;
+    align-items: center;
+}
+
+.btn-primary {
+    width:min-content;
+    border: none;
+    height: 40px;
+    padding: 0px 20px;
+    padding-top: 4px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background: white;
+    color: var(--root-bg);
+    box-shadow: 0 2px 8px rgba(12, 12, 13, 0.2);
+    font-size: 16px;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}

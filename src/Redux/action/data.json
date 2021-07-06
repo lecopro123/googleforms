@@ -1,0 +1,78 @@
+{
+    "form": [
+        {
+            "name": "Name",
+            "type": "text",
+            "required": true,
+            "regex-function": "Name",
+            "default": "Keshava"
+        },
+        {
+            "name": "Password",
+            "type": "password",
+            "regex-function": "strict-password"
+        },
+        {
+            "name": "Date of Birth",
+            "type": "date",
+            "required": true
+        },
+        {
+            "name": "Story",
+            "type": "long text",
+            "required": true,
+            "min-length": 250,
+            "max-lenght": 10000
+        },
+        {
+            "name": "Hobbies",
+            "type": "multi choice dropdown",
+            "list": [
+                "Reading",
+                "Travelling",
+                "Cooking",
+                "Hacking",
+                "Drawing"
+            ],
+            "min-choice": 1,
+            "max-choice": 4
+        },
+        {
+            "name": "Actvity you like most",
+            "type": "single choice dropdown",
+            "list": [
+                "Coding",
+                "Hiking",
+                "Diving",
+                "Running"
+            ],
+            "required": false
+        },
+        {
+            "name": "Age",
+            "type": "int",
+            "min-value": 0,
+            "max-value": 100,
+            "required": true,
+            "default": 22
+        },
+        {
+            "name": "Rating",
+            "type": "float",
+            "min-value": 0,
+            "max-value": 5,
+            "required": true,
+            "default": 5
+        },
+        {
+            "name": "Gender",
+            "type": "toggle",
+            "options": [
+                "male",
+                "female"
+            ],
+            "required": true,
+            "default": "female"
+        }
+    ]
+}
